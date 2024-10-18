@@ -27,32 +27,35 @@ with col4:
     
 with col5:
     Loss_of_Taste_or_Smell = st.text_input('Loss_of_Taste_or_Smell')
-
+    
 with col1:
+    Sore_Throat = st.text_input('Sore_Throat')
+
+with col2:
     Headache = st.text_input('Headache')
     
-with col2:
+with col3:
     Muscle_Pain = st.text_input('Muscle_Pain')
 
-with col3:
+with col4:
     Diarrhea= st.text_input('Diarrhea')
     
-with col4:
+with col5:
     Nausea = st.text_input('Nausea')
 
-with col5:
+with col1:
   Chest_Pain=st.text_input('Chest_Pain')
 
-with col1:
+with col2:
     High_Blood_Pressure = st.text_input('High_Blood_Pressure')
     
-with col2:
+with col3:
     Diabetes = st.text_input('Diabetes')
 
-with col3:
+with col4:
     Heart_Disease = st.text_input('Heart_Disease')
     
-with col4:
+with col5:
     Obesity = st.text_input('Obesity')
 
 # code for Prediction
