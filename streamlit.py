@@ -21,7 +21,7 @@ st.markdown(
     .block-container {
         background: rgba(255, 255, 255, 0.1);
         padding: 30px;
-        border: 2px solid #FF6347;
+        border: 2px solid #ccc;
         border-radius: 15px;
         max-width: 800px;
         margin: auto;
