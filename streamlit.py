@@ -76,55 +76,55 @@ st.markdown(
 )
 
 # Page title with emoji
-st.markdown("<h1>🌍 Covid 19 Prediction using ML 🦠</h1>", unsafe_allow_html=True)
+st.markdown("<h1>🌍 Covid 19 Prediction using ML</h1>", unsafe_allow_html=True)
 
 # Getting the input data from the user
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-    Fever = st.text_input('🌡️ Fever')
+    Fever = st.number_input('🌡️ Fever (°C)', min_value=34.0, max_value=42.0, value=37.5, step=0.1)
 
 with col2:
-    Cough = st.text_input('🤧 Cough')
+    Cough = st.number_input('🤧 Cough (Scale 0-10)', min_value=0, max_value=10, value=5, step=1)
 
 with col3:
-    Shortness_of_Breath = st.text_input('💨 Shortness of Breath')
+    Shortness_of_Breath = st.number_input('💨 Shortness of Breath (Scale 0-10)', min_value=0, max_value=10, value=3, step=1)
 
 with col4:
-    Fatigue = st.text_input('😩 Fatigue')
+    Fatigue = st.number_input('😩 Fatigue (Scale 0-10)', min_value=0, max_value=10, value=4, step=1)
 
 with col5:
-    Loss_of_Taste_or_Smell = st.text_input('👅 Loss of Taste or Smell')
+    Loss_of_Taste_or_Smell = st.number_input('👅 Loss of Taste or Smell (Scale 0-10)', min_value=0, max_value=10, value=2, step=1)
 
 with col1:
-    Sore_Throat = st.text_input('🤒 Sore Throat')
+    Sore_Throat = st.number_input('🤒 Sore Throat (Scale 0-10)', min_value=0, max_value=10, value=3, step=1)
 
 with col2:
-    Headache = st.text_input('💥 Headache')
+    Headache = st.number_input('💥 Headache (Scale 0-10)', min_value=0, max_value=10, value=4, step=1)
 
 with col3:
-    Muscle_Pain = st.text_input('💪 Muscle Pain')
+    Muscle_Pain = st.number_input('💪 Muscle Pain (Scale 0-10)', min_value=0, max_value=10, value=3, step=1)
 
 with col4:
-    Diarrhea = st.text_input('💩 Diarrhea')
+    Diarrhea = st.number_input('💩 Diarrhea (Scale 0-10)', min_value=0, max_value=10, value=1, step=1)
 
 with col5:
-    Nausea = st.text_input('🤢 Nausea')
+    Nausea = st.number_input('🤢 Nausea (Scale 0-10)', min_value=0, max_value=10, value=2, step=1)
 
 with col1:
-    Chest_Pain = st.text_input('❤️ Chest Pain')
+    Chest_Pain = st.number_input('❤️ Chest Pain (Scale 0-10)', min_value=0, max_value=10, value=1, step=1)
 
 with col2:
-    High_Blood_Pressure = st.text_input('📈 High Blood Pressure')
+    High_Blood_Pressure = st.number_input('📈 High Blood Pressure (mm Hg)', min_value=80, max_value=200, value=120, step=1)
 
 with col3:
-    Diabetes = st.text_input('🍭 Diabetes')
+    Diabetes = st.number_input('🍭 Diabetes (Scale 0-10)', min_value=0, max_value=10, value=2, step=1)
 
 with col4:
-    Heart_Disease = st.text_input('❤️‍🩹 Heart Disease')
+    Heart_Disease = st.number_input('❤️‍🩹 Heart Disease (Scale 0-10)', min_value=0, max_value=10, value=1, step=1)
 
 with col5:
-    Obesity = st.text_input('⚖️ Obesity')
+    Obesity = st.number_input('⚖️ Obesity (Scale 0-10)', min_value=0, max_value=10, value=3, step=1)
 
 # Code for Prediction
 covid19_diagnosis = ''
