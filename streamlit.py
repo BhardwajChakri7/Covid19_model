@@ -11,49 +11,49 @@ st.markdown("<h1 style='text-align: center; color: white;'>Covid 19 Prediction u
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-    Fever = st.text_input('Fever')
+    Fever = st.text_input('Fever', "", key='fever')
 
 with col2:
-    Cough = st.text_input('Cough')
+    Cough = st.text_input('Cough', "", key='cough')
 
 with col3:
-    Shortness_of_Breath = st.text_input('Shortness of Breath')
+    Shortness_of_Breath = st.text_input('Shortness of Breath', "", key='shortness_breath')
 
 with col4:
-    Fatigue = st.text_input('Fatigue')
+    Fatigue = st.text_input('Fatigue', "", key='fatigue')
 
 with col5:
-    Loss_of_Taste_or_Smell = st.text_input('Loss of Taste or Smell')
+    Loss_of_Taste_or_Smell = st.text_input('Loss of Taste or Smell', "", key='loss_taste_smell')
 
 with col1:
-    Sore_Throat = st.text_input('Sore Throat')
+    Sore_Throat = st.text_input('Sore Throat', "", key='sore_throat')
 
 with col2:
-    Headache = st.text_input('Headache')
+    Headache = st.text_input('Headache', "", key='headache')
 
 with col3:
-    Muscle_Pain = st.text_input('Muscle Pain')
+    Muscle_Pain = st.text_input('Muscle Pain', "", key='muscle_pain')
 
 with col4:
-    Diarrhea = st.text_input('Diarrhea')
+    Diarrhea = st.text_input('Diarrhea', "", key='diarrhea')
 
 with col5:
-    Nausea = st.text_input('Nausea')
+    Nausea = st.text_input('Nausea', "", key='nausea')
 
 with col1:
-    Chest_Pain = st.text_input('Chest Pain')
+    Chest_Pain = st.text_input('Chest Pain', "", key='chest_pain')
 
 with col2:
-    High_Blood_Pressure = st.text_input('High Blood Pressure')
+    High_Blood_Pressure = st.text_input('High Blood Pressure', "", key='high_blood_pressure')
 
 with col3:
-    Diabetes = st.text_input('Diabetes')
+    Diabetes = st.text_input('Diabetes', "", key='diabetes')
 
 with col4:
-    Heart_Disease = st.text_input('Heart Disease')
+    Heart_Disease = st.text_input('Heart Disease', "", key='heart_disease')
 
 with col5:
-    Obesity = st.text_input('Obesity')
+    Obesity = st.text_input('Obesity', "", key='obesity')
 
 # Code for Prediction
 covid19_diagnosis = ''
