@@ -34,7 +34,7 @@ st.markdown(
         margin-bottom: 20px;
     }
     .stButton>button {
-        background-color: #FF6347;
+        background-color: #ccc;
         color: white;
         font-size: 20px;
         padding: 12px 30px;
