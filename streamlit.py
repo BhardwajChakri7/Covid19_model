@@ -23,7 +23,7 @@ st.markdown(
         padding: 30px;
         border: 2px solid #ccc;
         border-radius: 15px;
-        max-width: 950px;
+        max-width: 925px;
         margin: auto;
         backdrop-filter: blur(10px);
         box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.7);
@@ -88,7 +88,7 @@ with cols[1]:
     Cough = st.number_input('🤧 Cough (Scale 0-10)', min_value=0, max_value=10, value=5, step=1)
 
 with cols[2]:
-    Shortness_of_Breath = st.number_input('💨 Shortness of Breath (Scale 0-10)', min_value=0, max_value=10, value=3, step=1)
+    Obesity = st.number_input('⚖️ Obesity (Scale 0-10)', min_value=0, max_value=10, value=3, step=1)
 
 with cols[3]:
     Fatigue = st.number_input('😩 Fatigue (Scale 0-10)', min_value=0, max_value=10, value=4, step=1)
@@ -124,7 +124,7 @@ with cols[1]:
     Heart_Disease = st.number_input('❤️‍🩹 Heart Disease (Scale 0-10)', min_value=0, max_value=10, value=1, step=1)
 
 with cols[2]:
-    Obesity = st.number_input('⚖️ Obesity (Scale 0-10)', min_value=0, max_value=10, value=3, step=1)
+    Shortness_of_Breath = st.number_input('💨 Shortness of Breath (Scale 0-10)', min_value=0, max_value=10, value=3, step=1)
 
 # Code for Prediction
 covid19_diagnosis = ''
