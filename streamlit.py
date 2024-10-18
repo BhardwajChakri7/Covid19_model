@@ -5,7 +5,7 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-covid19 = pickle.load(open('BreastCancer_model.sav', 'rb'))
+covid19 = pickle.load(open('covid19_model.sav', 'rb'))
 # page title
 st.title('Covid 19 Prediction using ML')
 
