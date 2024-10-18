@@ -23,7 +23,7 @@ st.markdown(
         padding: 30px;
         border: 2px solid #ccc;
         border-radius: 15px;
-        max-width: 950px;
+        max-width: 900px;
         margin: auto;
         backdrop-filter: blur(10px);
         box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.7);
@@ -78,52 +78,52 @@ st.markdown(
 # Page title with emoji
 st.markdown("<h1>🌍 Covid 19 Prediction using ML</h1>", unsafe_allow_html=True)
 
-# Getting the input data from the user
-col1, col2, col3, col4, col5 = st.columns(5)
+# Getting the input data from the user in 4 columns
+cols = st.columns(4)
 
-with col1:
+with cols[0]:
     Fever = st.number_input('🌡️ Fever (°C)', min_value=34.0, max_value=42.0, value=37.5, step=0.1)
 
-with col2:
+with cols[1]:
     Cough = st.number_input('🤧 Cough (Scale 0-10)', min_value=0, max_value=10, value=5, step=1)
 
-with col3:
+with cols[2]:
     Shortness_of_Breath = st.number_input('💨 Shortness of Breath (Scale 0-10)', min_value=0, max_value=10, value=3, step=1)
 
-with col4:
+with cols[3]:
     Fatigue = st.number_input('😩 Fatigue (Scale 0-10)', min_value=0, max_value=10, value=4, step=1)
 
-with col5:
+with cols[0]:
     Loss_of_Taste_or_Smell = st.number_input('👅 Loss of Taste or Smell (Scale 0-10)', min_value=0, max_value=10, value=2, step=1)
 
-with col1:
+with cols[1]:
     Sore_Throat = st.number_input('🤒 Sore Throat (Scale 0-10)', min_value=0, max_value=10, value=3, step=1)
 
-with col2:
+with cols[2]:
     Headache = st.number_input('💥 Headache (Scale 0-10)', min_value=0, max_value=10, value=4, step=1)
 
-with col3:
+with cols[3]:
     Muscle_Pain = st.number_input('💪 Muscle Pain (Scale 0-10)', min_value=0, max_value=10, value=3, step=1)
 
-with col4:
+with cols[0]:
     Diarrhea = st.number_input('💩 Diarrhea (Scale 0-10)', min_value=0, max_value=10, value=1, step=1)
 
-with col5:
+with cols[1]:
     Nausea = st.number_input('🤢 Nausea (Scale 0-10)', min_value=0, max_value=10, value=2, step=1)
 
-with col1:
+with cols[2]:
     Chest_Pain = st.number_input('❤️ Chest Pain (Scale 0-10)', min_value=0, max_value=10, value=1, step=1)
 
-with col2:
+with cols[3]:
     High_Blood_Pressure = st.number_input('📈 High Blood Pressure (mm Hg)', min_value=80, max_value=200, value=120, step=1)
 
-with col3:
+with cols[0]:
     Diabetes = st.number_input('🍭 Diabetes (Scale 0-10)', min_value=0, max_value=10, value=2, step=1)
 
-with col4:
+with cols[1]:
     Heart_Disease = st.number_input('❤️‍🩹 Heart Disease (Scale 0-10)', min_value=0, max_value=10, value=1, step=1)
 
-with col5:
+with cols[2]:
     Obesity = st.number_input('⚖️ Obesity (Scale 0-10)', min_value=0, max_value=10, value=3, step=1)
 
 # Code for Prediction
