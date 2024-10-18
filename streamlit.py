@@ -29,12 +29,12 @@ st.markdown(
         box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.7);
     }
     h1 {
-        color: #FF6347;
+        color: #ccc;
         text-align: center;
         margin-bottom: 20px;
     }
     .stButton>button {
-        background-color: #ccc;
+        background-color: #FF6347;
         color: white;
         font-size: 20px;
         padding: 12px 30px;
